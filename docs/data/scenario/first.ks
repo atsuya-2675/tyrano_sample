@@ -1,46 +1,54 @@
 *start
 
-[title name="走るか寝るかするメロス"]
+[title name="トロッコクイズ"]
 [hidemenubutton]
 [wait time=200]
 [freeimage layer="base"]
 
-「走るか寝るかするメロス」[l][r]
+「トロッコクイズへようこそ」[l][r]
 
-メロスは激怒した。[l][r]
+2択のクイズに答えてね。[l][r]
 
-必ず、かの邪智暴虐の王を除かねばならぬと決意した。[l][r]
 
-(中略)[l][r]
+雪辱を晴らすという文は正しい。[l][r]
 
-ああ、何もかも、ばかばかしい。私は、醜い裏切り者だ。どうとも、勝手にするがよい。やんぬる哉。[l][r]
-メロスは...[l][r]
 
-[link target=*tag_sleep] →寝る [endlink][r]
-[link target=*tag_run] →走る [endlink][r]
+
+[link target=*tag_sleep] →✕ [endlink][r]
+[link target=*tag_run] →〇 [endlink][r]
 [s]
 
 *tag_sleep
 
-[cm]
+[bg storage=maru.png time=500]
 
-[bg storage=sleep.jpg time=500]
+正解！[l][r]
 
-メロスは死んだように深く眠った。[l][r]
-勇者は、ひどく赤面した。[r]
+「雪辱を果たす」と「屈辱を晴らす」は間違えやすいね。[l][r]
 
-【 BAD END 】[l][cm]
+閉ざされた扉がゴゴゴと開く。[l][r]
+
+[bg storage=takara.png time=500]
+
+おめでとう！[l][r]
+
+【 HAPPY END 】[l][cm]
 
 [jump target=*start]
 
 *tag_run
 
-[bg storage=run.jpg time=500]
+[bg storage=batsu.png time=500]
 
-[cm]
-メロスは黒い風のように走った。[l][r]
-陽は、ゆらゆら地平線に没し、まさに最後の一片の残光も、消えようとした時、メロスは疾風の如く刑場に突入した。間に合った。[r]
 
-【 GOOD END 】[l][cm]
+残念不正解。[l][r]
+正しくは「雪辱を果たす」だね[l][r]
+
+
+トロッコが壁へもう突進していく。[l][r]
+
+[bg storage=bakuhatsu.png time=500]
+
+【 BAD END 】[l][cm]
 
 [jump target=*start]
